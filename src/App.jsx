@@ -1,10 +1,20 @@
 import "./App.css";
 import Nav from "./Nav";
 import Banner from "./Banner";
-import { MdOutlineWatchLater } from "react-icons/md";
-import { BsFire } from "react-icons/bs";
+
+
 import Footer from "./Footer";
+import { useEffect, useState } from "react";
+import Singlcart from "./Singlcart";
 function App() {
+  const [carts, setCart] = useState([]);
+  useEffect(()=>{
+    fetch("./fakeData.json")
+    .then(res=>res.json())
+    .then(data=>setCart(data))
+  },[])
+console.log(carts);
+
   return (
     <div>
       <div className="container mx-auto mt-3">
@@ -24,96 +34,12 @@ function App() {
       <div className="lg:flex justify-between mt-10">
         {/* 1 left side cart*/}
         <div className="grid lg:grid-cols-2 gap-6">
-          <div className="card w-96 bg-base-100 border  ">
-            <figure className="p-4">
-              <img
-                className="rounded-md"
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="px-4">
-              <h2 className="lexend  font-semibold text-lg">
-                Spaghetti Bolognese
-              </h2>
-              <p className="mt-2 lexend text-sm text-gray-500 font-normal">
-                {" "}
-                Classic Italian pasta dish with savory meat <br /> sauce.
-              </p>
-              <hr className="mt-4" />
-              <h1 className="lexend font-semibold text-lg mt-4">
-                Ingredients: 6
-              </h1>
-              <div className="pl-8 mt-3">
-                <ul className="lexend text-sm text-gray-500">
-                  <li className="list-disc">500g ground beef</li>
-                  <li className="list-disc">1 onion, chopped</li>
-                  <li className="list-disc">2 cloves garlic, minced</li>
-                </ul>
-              </div>
-              <hr className="mt-3" />
-              <div className="flex gap-4 mt-3">
-                <div className="flex gap-2 lexend text-base">
-                  <MdOutlineWatchLater className="text-2xl text-gray-500" />
-                  <h1>30 minutes</h1>
-                </div>
-                <div className="flex gap-2 lexend text-base">
-                  <BsFire className=" text-xl text-gray-500" />
-                  <h1>600 calories</h1>
-                </div>
-              </div>
-              <div className="card-actions mt-4 mb-4 ">
-                <button className="bg-[#0BE58A] rounded-full  w-32 text-normal btn ">
-                  Want to Cook
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 border  ">
-            <figure className="p-4">
-              <img
-                className="rounded-md"
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="px-4">
-              <h2 className="lexend  font-semibold text-lg">
-                Spaghetti Bolognese
-              </h2>
-              <p className="mt-2 lexend text-sm text-gray-500 font-normal">
-                {" "}
-                Classic Italian pasta dish with savory meat <br /> sauce.
-              </p>
-              <hr className="mt-4" />
-              <h1 className="lexend font-semibold text-lg mt-4">
-                Ingredients: 6
-              </h1>
-              <div className="pl-8 mt-3">
-                <ul className="lexend text-sm text-gray-500">
-                  <li className="list-disc">500g ground beef</li>
-                  <li className="list-disc">1 onion, chopped</li>
-                  <li className="list-disc">2 cloves garlic, minced</li>
-                </ul>
-              </div>
-              <hr className="mt-3" />
-              <div className="flex gap-4 mt-3">
-                <div className="flex gap-2 lexend text-base">
-                  <MdOutlineWatchLater className="text-2xl text-gray-500" />
-                  <h1>30 minutes</h1>
-                </div>
-                <div className="flex gap-2 lexend text-base">
-                  <BsFire className=" text-xl text-gray-500" />
-                  <h1>600 calories</h1>
-                </div>
-              </div>
-              <div className="card-actions mt-4 mb-4 ">
-                <button className="bg-[#0BE58A] rounded-full  w-32 text-normal btn ">
-                  Want to Cook
-                </button>
-              </div>
-            </div>
-          </div>
+        {
+              carts.map(cart=><Singlcart key={cart.id} cart={cart}></Singlcart>)
+
+            }
+         
+          
         </div>
         {/* 2 right site */}
         <div className="lg:w-[700px] h-[558px] w-96  rounded-2xl  mt-2 border">
