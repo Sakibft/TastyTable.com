@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "r_name": "Crispy fried chicken on a plate with salad and carrot",
+    "r_name": "Crispy fried chicken with salad ",
     "description": "A healthy and colorful salad featuring quinoa, mixed vegetables, and a zesty vinaigrette dressing.",
     "ingredients": ["250g quinoa", "150g cherry tomatoes", "100g cucumber", "50g feta cheese"],
     "p_time": "15 min",
@@ -49,7 +49,7 @@
   
   {
     "id": 6,
-    "r_name": "Pizza pizza filled with tomatoes, salami and olives",
+    "r_name": "Pizza  with tomatoes,  ",
     "description": "Juicy beef patties topped with melted cheese, lettuce, tomato, and pickles, served in a soft bun.",
     "ingredients": ["500g ground beef", "4 hamburger buns", "100g cheddar cheese", "50g lettuce"],
     "p_time": "25 min",

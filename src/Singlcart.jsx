@@ -1,7 +1,8 @@
 import { MdOutlineWatchLater } from "react-icons/md";
 import { BsFire } from "react-icons/bs";
-const Singlcart = ({ cart }) => {
-  console.log(cart);
+const Singlcart = ({ cart, handleCard  }) => {
+  // console.log(handleCard);
+  
   return (
     <div className="card w-96 bg-base-100 border  ">
       <figure className="p-4">
@@ -36,7 +37,7 @@ const Singlcart = ({ cart }) => {
           </div>
         </div>
         <div className="card-actions mt-4 mb-4 ">
-          <button className="bg-[#0BE58A] rounded-full  w-32 text-normal btn ">
+          <button onClick={()=>handleCard(cart)} className="bg-[#0BE58A] rounded-full  w-32 text-normal btn ">
             Want to Cook
           </button>
         </div>
