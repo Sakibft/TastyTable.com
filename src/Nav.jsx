@@ -42,7 +42,7 @@ const Nav = () => {
                 </li>
               </ul>
             </div>
-            <a className="lexend font-extrabold btn-ghost text-xl">Recipe Calories </a>
+            <a className="lexend font-extrabold  text-xl">Recipe Calories </a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 flex gap-8 lexend font-normal text-lg">
@@ -60,8 +60,8 @@ const Nav = () => {
               </li>
             </ul>
           </div>
-          <div className="navbar-end flex gap-10">
-            <label className="input input-bordered flex items-center gap-4 rounded-full bg-base-200 border-none text-2xl ">
+          <div className="navbar-end flex gap-6">
+            <label className="input lg:w-[300px] w-[150px] flex items-center gap-4 rounded-full bg-base-200 border-none text-2xl ">
               <IoSearchOutline />
               <input type="text" className="grow text-lg  " placeholder="Search" />
             </label>
