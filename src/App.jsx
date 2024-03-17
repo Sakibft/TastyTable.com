@@ -74,8 +74,8 @@ function App() {
                 </h1>
                 <hr className="mt-4 w-96 lg:ml-40" />
               </div>
-              <div className="mt-4">
-                <tr className=" flex justify-around">
+              <div className="mt-4 ">
+                <tr className=" flex justify-around mb-4">
                   <th>Name</th>
                   <th>Time</th>
                   <th>Calories</th>
@@ -104,7 +104,7 @@ function App() {
               </div>
               {/* currently coking */}
               <div className="text-center lexend font-semibold text-xl mt-8">
-                <h1>Currently cooking :{cok.length} </h1>
+                <h1>Currently cooking : {cok.length} </h1>
 
                 <hr className=" w-96 lg:ml-40 mt-4" />
               </div>

@@ -3,9 +3,9 @@
 const Banner = () => {
   return (
     <div>
-       <div className="bg-[url('./images/banner.png')] bg-contain lg:min-h-[700px] min-h-[300px] bg-no-repeat mt-4">
+       <div className="bg-[url('./images/banner.png')] bg-contain  6 lg:min-h-[700px] min-h-[300px] bg-no-repeat mt-4">
         <div className="text-white flex flex-col items-center justify-center lg:gap-8 gap-1 lg:pt-40 pt-3">
-        <h1 className="lexend lg:text-7xl text-2xl font-semibold text-center space-y-5">Discover an exceptional cooking  
+        <h1 className="lexend lg:text-7xl text-xl font-semibold text-center space-y-5">Discover an exceptional cooking  
         <h1 className="lexend lg:text-7xl font-semibold text-center space-y-5 lg:mt-6 mt-1">
            class tailored for you!
           </h1>

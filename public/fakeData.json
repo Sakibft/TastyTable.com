@@ -12,7 +12,7 @@
     "id": 2,
     "r_name": "Fresh pasta with hearty Bolognese",
     "description": "A healthy and colorful salad featuring quinoa, mixed vegetables, and a zesty vinaigrette dressing.",
-    "ingredients": ["250g quinoa", "150g cherry tomatoes", "100g cucumber", "50g feta cheese", "100g protin"],
+    "ingredients": ["250g quinoa", "150g cherry tomatoes", "100g cucumber", "50g feta cheese"],
     "p_time": "15 min",
     "calories": "320 calories",
     "image": "https://i.ibb.co/GvVdpV6/pasta.jpg"

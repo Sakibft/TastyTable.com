@@ -21,7 +21,7 @@ const Singlcart = ({ cart, handleCard  }) => {
             <li className="list-disc">{cart.ingredients[1]}</li>
             <li className="list-disc">{cart.ingredients[2]}</li>
             <li className="list-disc">{cart.ingredients[3]}</li>
-            <li className="list-disc">{cart.ingredients[4]}</li>
+          
            
             
           </ul>
