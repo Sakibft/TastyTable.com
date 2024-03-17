@@ -4,7 +4,7 @@ const Singlcart = ({ cart, handleCard  }) => {
   // console.log(handleCard);
   
   return (
-    <div className="card w-96 bg-base-100 border  ">
+    <div className="card w-96 bg-base-100 shadow-md border  ">
       <figure className="p-4">
         <img className="rounded-xl h-60 w-80" src={cart.image} alt="Shoes" />
       </figure>
@@ -14,13 +14,14 @@ const Singlcart = ({ cart, handleCard  }) => {
           {cart.description}
         </p>
         <hr className="mt-4" />
-        <h1 className="lexend font-semibold text-lg mt-4">Ingredients: 6</h1>
+        <h1 className="lexend font-semibold text-lg mt-4">Ingredients: {cart.ingredients.length}</h1>
         <div className="pl-8 mt-3">
           <ul className="lexend text-sm text-gray-500">
             <li className="list-disc">{cart.ingredients[0]}</li>
             <li className="list-disc">{cart.ingredients[1]}</li>
             <li className="list-disc">{cart.ingredients[2]}</li>
             <li className="list-disc">{cart.ingredients[3]}</li>
+            <li className="list-disc">{cart.ingredients[4]}</li>
            
             
           </ul>
